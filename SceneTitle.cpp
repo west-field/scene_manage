@@ -9,7 +9,7 @@ void SceneTitle::init()
 	m_isEnd = false;
 }
 
-void SceneTitle::update()
+SceneBase* SceneTitle::update()
 {
 	// •¶Žš‚ÌˆÚ“®
 	m_textPosY += m_textVecY;
@@ -29,6 +29,8 @@ void SceneTitle::update()
 	{
 		m_isEnd = true;
 	}
+
+	return this;
 }
 
 void SceneTitle::draw()

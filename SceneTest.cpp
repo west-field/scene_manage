@@ -9,7 +9,7 @@ void SceneTest::init()
 	m_isEnd = false;
 }
 
-void SceneTest::update()
+SceneBase* SceneTest::update()
 {
 	// •¶Žš‚ÌˆÚ“®
 	m_textPosX += m_textVecX;
@@ -29,6 +29,8 @@ void SceneTest::update()
 	{
 		m_isEnd = true;
 	}
+
+	return this;
 }
 
 void SceneTest::draw()
