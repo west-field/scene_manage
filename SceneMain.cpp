@@ -6,8 +6,6 @@ void SceneMain::init()
 {
 	m_textPosX = 0;
 	m_textVecX = 4;
-
-	m_isEnd = false;
 }
 
 SceneBase* SceneMain::update()

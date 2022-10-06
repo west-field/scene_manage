@@ -8,8 +8,6 @@ void SceneTitle::init()
 {
 	m_textPosY = 0;
 	m_textVecY = 4;
-
-	m_isEnd = false;
 }
 
 SceneBase* SceneTitle::update()
