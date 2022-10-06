@@ -34,5 +34,5 @@ SceneBase* SceneTest::update()
 
 void SceneTest::draw()
 {
-	DrawString(m_textPosX, 0, "test‰æ–Ê", GetColor(255, 255, 255));
+	DrawString(m_textPosX, 20, "test‰æ–Ê", GetColor(255, 255, 0));
 }
