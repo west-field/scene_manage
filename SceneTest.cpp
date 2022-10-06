@@ -6,8 +6,6 @@ void SceneTest::init()
 {
 	m_textPosX = 0;
 	m_textVecX = 4;
-
-	m_isEnd = false;
 }
 
 SceneBase* SceneTest::update()
