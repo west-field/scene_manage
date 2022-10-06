@@ -8,7 +8,6 @@ public:
 	{
 		m_textPosX = 0;
 		m_textVecX = 0;
-		m_isEnd = false;
 	}
 	virtual ~SceneTest() {}
 
@@ -18,12 +17,8 @@ public:
 
 	virtual SceneBase* update()override;
 	virtual void draw()override;
-
-	virtual bool isEnd()override { return m_isEnd; }
 private:
 	// テキスト表示位置変更
 	int m_textPosX;
 	int m_textVecX;
-
-	bool m_isEnd;
 };
