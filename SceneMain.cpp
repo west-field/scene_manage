@@ -1,4 +1,5 @@
 #include "SceneMain.h"
+#include "SceneTitle.h"
 #include "DxLib.h"
 
 void SceneMain::init()
@@ -25,9 +26,9 @@ SceneBase* SceneMain::update()
 	}
 
 	int padState = GetJoypadInputState(DX_INPUT_KEY_PAD1);
-	if (padState & PAD_INPUT_2)
+	if (padState & PAD_INPUT_3)
 	{
-		m_isEnd = true;
+		return (new SceneTitle);
 	}
 
 	return this;
