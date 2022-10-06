@@ -3,6 +3,7 @@
 
 #include "SceneTitle.h"
 #include "SceneMain.h"
+#include "SceneTest.h"
 
 SceneManager::SceneManager()
 {
@@ -23,7 +24,8 @@ void SceneManager::init(SceneKind kind)
 		m_pScene = new SceneTitle;
 		break;
 	case SceneManager::kSceneKindMain:
-		m_pScene = new SceneMain;
+//		m_pScene = new SceneMain;
+		m_pScene = new SceneTest;
 		break;
 	case SceneManager::kSceneKindNum:
 	default:
